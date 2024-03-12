@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Movie Search App</title>
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <style>
+    button[type="submit"] {
+      background-color: black;
+      color: red;
+      border: none;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+    }
+
+    button[type="submit"]:hover {
+      background-color: #333; /* Darker shade of black on hover */
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h3><a href="index.html"><img src="logo.png" alt="Your Logo" id="logo"></a></h3>
+    <form id="form">
+      <input type="text" placeholder="Search" id="search" class="search" />
+      <!-- Filter Menu -->
+      <select id="filter">
+        <option value="popularity.desc">Popularity</option>
+        <option value="vote_average.desc">Rating</option>
+        <option value="release_date.desc">Release Date</option>
+      </select>
+      <!-- Genre Menu -->
+      <select id="genre">
+        <option value="">All Genres</option>
+        <option value="28">Action</option>
+        <option value="12">Adventure</option>
+        <option value="16">Animation</option>
+        <option value="35">Comedy</option>
+        <option value="80">Crime</option>
+        <option value="99">Documentary</option>
+        <option value="18">Drama</option>
+        <option value="10751">Family</option>
+        <option value="14">Fantasy</option>
+        <option value="36">History</option>
+        <option value="27">Horror</option>
+        <option value="10402">Music</option>
+        <option value="9648">Mystery</option>
+        <option value="10749">Romance</option>
+        <option value="878">Science Fiction</option>
+        <option value="10770">TV Movie</option>
+        <option value="53">Thriller</option>
+        <option value="10752">War</option>
+        <option value="37">Western</option>
+      </select>
+      <button type="submit">Apply Filter</button>
+<select id="mood">
+  <option value="">Select Mood</option>
+  <option value="happy">Happy</option>
+  <option value="sad">Sad</option>
+  <option value="angry">Angry</option>
+</select>
+
+    </form>
+  </header>
+
+  <main id="main"></main>
+  <h1 hidden id="recommendations-header" style="text-align: center">
+    Recommendations based on search results
+  </h1>
+  <div id="recommendations"></div>
+
+  <div class="footer">
+    <h4>Designed & Developed with &#10084;&#65039; by Ronith</h4>
+  </div>  <!-- Custom Script -->
+  <script src="script.js"></script>
+</body>
+</html>
