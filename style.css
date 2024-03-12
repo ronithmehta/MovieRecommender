@@ -264,7 +264,7 @@ main,
 h3 img#logo {
   width: 200px; /* Adjust this value to change the logo size */
   height: auto;
-  margin-right: 300px;
+  margin-right: 100px;
 }
 /* Styling for the mood dropdown */
 #mood {
@@ -279,6 +279,7 @@ h3 img#logo {
   color: red; /* Text color */
   cursor: pointer;
   outline: none;
+margin-left: 1cm;
   margin-right: 1cm; /* Decreased spacing to 1cm */
 }
 
